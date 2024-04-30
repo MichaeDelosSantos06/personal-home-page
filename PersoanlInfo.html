@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persoanl Home Page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+         nav a{
+            text-decoration: none;
+            padding: 25px;
+            text-transform:uppercase;
+            color: white;
+            position: relative;
+    
+        }
+
+        /* nav a:hover{
+
+            color: gold;
+            position: relative
+        } */
+
+        nav a::after{
+
+            content: '';
+            position: absolute;
+            bottom: 22px;
+            left: 25px;
+            width: 0%;
+            height: 2px;
+            background-color: gold;
+            transition:  0.2s;
+        }
+
+        nav a:hover::after{
+            width: 65%;
+            
+        }
+
+        nav{
+            text-align: center;
+            margin: 25px;
+        }
+
+        .main-container{
+         background-color: black;
+         position: fixed;
+         width: 100%;
+         height: 100%;  
+        }
+
+        h1{
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .name{
+            background-color: white;
+            position: absolute;
+            width: 350px;
+            height: 450px;
+            left: 13%;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition-delay: .5s;
+            transition-duration: .5s;
+            cursor: pointer;
+        }
+        .name:hover{
+            background-color: #288EED;
+            transition: 1s;
+        }
+
+        .address{
+            background-color: white;
+            position: absolute;
+            width: 350px;
+            height: 450px;
+            left: 38%;
+            bottom: 35px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition-delay: .5s;
+            transition-duration: .5s;
+            cursor: pointer;
+        }
+        .address:hover{
+            background-color: #28CCED;
+            transition: 1s;
+        }
+
+        .others{
+            background-color: white;
+            position: absolute;
+            width: 350px;
+            height: 600px;
+            left: 63%;
+            bottom: 5px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition-delay: .5s;
+            transition-duration: .5s;
+            cursor: pointer;
+        }
+        .others:hover{
+            background-color: #3F28ED;
+            transition: 1s;
+        }
+
+        .header{
+            background-color: white;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            top: -65px;
+            left: 35px;
+            transition-delay: 0.5s;
+        }
+
+        .header1{
+            background-color: white;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            top: -65px;
+            left: 100px;
+        }
+
+        
+        .header2{
+            background-color: white;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            top: -65px;
+            left: 170px;
+        }
+        
+        .header h1{
+            position: relative;
+            color: black;
+            font-size: 20px;
+            font-family: Georgia;
+        }
+
+        h1{
+            top: 45px;
+        }
+
+        .header1 h1{
+            position: relative;
+            color: black;
+            font-size: 20px;
+            font-family: Georgia;
+        }
+
+        h1{
+            top: 45px;
+        }
+
+        .header2 h1{
+            position: relative;
+            color: black;
+            font-size: 20px;
+            font-family: Georgia;
+        }
+
+        h1{
+            top: 45px;
+        }
+
+        .info1{
+            color: white;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            top: 20%;
+            left: -5%;
+        }
+
+        .info1 .f-name{
+            font-size: 25px;
+            color: black;
+            /* font-style: normal; */
+        }
+
+        .info1 .p-birth{
+            font-size: 25px;
+            color: black;
+            /* font-style: normal; */
+        }
+
+        .info2 .y-birth{
+            font-size: 25px;
+            color: black;
+            /* font-style: normal; */
+        }
+
+        .info3 .weight{
+            font-size: 25px;
+            color: black;
+            /* font-style: normal; */
+        }
+
+        .info3 .height{
+            font-size: 25px;
+            color: black;
+            /* font-style: normal; */
+        }
+
+        .info3 .age{
+            font-size: 25px;
+            color: black;
+            /* font-style: normal; */
+        }
+
+        .info1 .p-address{
+            font-size: 25px;
+            color: black;
+            /* font-style: normal; */
+        }
+
+        p{
+            position: relative;
+            left: 35%;
+            font-style: italic ;
+        }
+
+        .info2{
+            color: white;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            top: 20%;
+            left: -5%;
+        }
+
+        .info3{
+            color: white;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            top: 20%;
+            left: -5%;
+        }
+
+        .info3 .contact{
+            font-size: 25px;
+            color: black;
+            font-style: normal;
+        }
+
+        .info2 .n-name{
+            font-size: 25px;
+            color: black;
+            font-style: normal;
+        }
+
+        .info2 .per-address{
+            font-size: 25px;
+            color: black;
+            /* font-style: normal; */
+        }
+
+        pre{
+            color: white;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        span{
+            color: gold;
+        }
+
+        .header:hover{
+            background-color: gold;
+            transition: 1s;
+            
+        }
+
+        .header1:hover{
+            background-color: gold;
+            transition: 1s;
+            
+        }
+
+        .header2:hover{
+            background-color: gold;
+            transition: 1s;
+            
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="AcadInfo.html">Academic Info.</a>
+            <a href="PersoanlInfo.html">personal Info.</a>
+            <a href="familyInfo.html">Family Info.</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="resume.html">Resume</a>
+           
+          </nav>
+          <h1><span>Personal</span> Information</h1>
+          <div class="info-container">
+            <div class="name">
+                <div class="header">
+                    <h1>NAME:</h1>
+                </div>
+                <div class="info1">
+                    <h1 class="f-name">Full-Name:</h1>
+                    <p>Michael M. Delos Santos</p>
+                </div>
+                <div class="info2">
+                    <h1 class="n-name">Nickname:</h1>
+                    <p>Michael / kekel</p>
+                </div>
+                <div class="info3">
+                    <h1 class="contact">Contact no.</h1>
+                    <p>09917279195</p>
+                </div>
+
+            </div>
+            <div class="address">
+                <div class="header1">
+                    <h1>ADDRESS:</h1>
+                </div>
+                <div class="info1">
+                    <h1 class="p-address">Present Address:</h1>
+                    <pre>               Malinta los Banos, Antique 
+                                 Compund</pre>
+                </div>
+                <div class="info2">
+                    <h1 class="per-address">Permanent Address: </h1>
+                    <pre class="st">               276 Saint Michael St. Mayapa 
+                                Calamba City</pre>
+                </div>
+                <div class="info2">
+                    <h1 class="per-address">Mobile No.:</h1>
+                    <pre class="st">                        09917279195</pre>
+                </div>
+
+            </div>
+            <div class="others">
+                <div class="header2">
+                    <h1>OTHERS:</h1>
+                </div>
+                <div class="info1">
+                    <h1 class="p-birth">Place of birth:</h1>
+                    <pre>                   San Jose Occidental Mindoro</pre>
+                </div>
+                <div class="info2">
+                    <h1 class="y-birth">Year of birth:</h1>
+                    <p>2003</p>
+                </div>
+                <div class="info3">
+                    <h1 class="weight">Weight:</h1>
+                    <p>54kg/lbs</p>
+                </div>
+                <div class="info3">
+                    <h1 class="height">Height:</h1>
+                    <p>165cm</p>
+                </div>
+                <div class="info3">
+                    <h1 class="age">Age:</h1>
+                    <p>20 years old</p>
+                </div>
+
+            </div>
+         </div>
+          
+    </div>
+    
+</body>
+</html>

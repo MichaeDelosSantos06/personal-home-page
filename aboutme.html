@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Home Page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 25px;
+            text-transform:uppercase;
+            color: white;
+            position: relative;
+            
+        }
+
+        /* nav a:hover{
+
+            color: gold;
+            position: relative
+        } */
+
+        nav a::after{
+
+            content: '';
+            position: absolute;
+            bottom: 22px;
+            left: 25px;
+            width: 0%;
+            height: 2px;
+            background-color: gold;
+            transition:  0.2s;
+        }
+
+        nav a:hover::after{
+            width: 65%;
+            
+        }
+
+        nav{
+            text-align: center;
+            margin: 25px;
+        }
+
+        .main-body{
+            background-color: whitesmoke;
+            height: 1500px;
+            width: 650px;
+            position: relative;
+            margin: auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            top: 20px;
+            border-radius: 25px;
+            padding: 25px;
+            transition-delay: 0.5s;
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+
+        .main-body:hover{
+            background-color: rgb(0, 166, 255);
+            transition: 0.5s;
+        }
+
+        .title{
+            font-size: 3em;
+            font-style: italic;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            position: relative;
+            padding: 15px;
+            top: -10px;
+        }
+
+        pre{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 20px;
+        }
+
+        .talent, .weakness, .strenght, .Hobbies, .Sports{
+            text-align: center;
+            padding: 25px;
+         
+        }
+
+       ul, li{
+            position: relative;
+            left: 18%;
+            text-align: justify;
+            line-height: 25px;
+            
+       }
+
+       .talents{
+            position: relative;
+            left: -30px;
+
+       }
+
+       .stren{
+            position: relative;
+            left: -25px;
+       }
+       
+      
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="AcadInfo.html">Academic Info.</a>
+        <a href="PersoanlInfo.html">personal Info.</a>
+        <a href="familyInfo.html">Family Info.</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+      <div class="main-body">
+            <h1 class="title">About Me</h1>
+            <hr>
+            <div class="describe-self">
+                <h1>Describe Myself:</h1>
+                <pre>   I am Michael Delos Santos, I am a currently college student
+    in Laguna State Polutechnic University of Los Banos,
+    I am taking the fir-elds of Technology. I am dreaming to be a future
+    Programmer in the future. Furthermore I am a simple man that enjoy my life
+    as a college student, also I love to play basketball and guitar.  </pre>
+            </div>
+            <hr>
+            <div class="talent">
+                <h1 class="talents">Talent:</h1>
+                <ul>
+                  
+                    <li>Playing Basketball</li>
+                    <li>Playing Guitar</li>
+                    <li>Playing Chess</li>
+                    <li>Programming</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="weakness">
+                <h1 class="weak">Weakness:</h1>
+                <ul>
+                    <li>Family</li>
+                    <li>Unable to express my emotions directly</li>
+                    <li>Over Caring</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="strength">
+                <h1 class="stren">Stregth:</h1>
+                <ul>
+                    <li>Family</li>
+                    <li>Firends</li>
+                    <li>My Dreams</li>
+                    <li>My Ambitions</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="Hobbies">
+                <h1 class="hobby">Hobbies::</h1>
+                <ul>
+                    <li>Playing Basketball</li>
+                    <li>Programming</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="Sports:">
+                <h1 class="spor">Sports:</h1>
+                <ul>
+                    <li>Basketball</li>
+                    <li>Mobile Games</li>
+                </ul>
+            </div>
+
+      </div>
+    
+</body>
+</html>

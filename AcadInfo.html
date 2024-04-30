@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Home Page</title>
+    <style>
+         body, *{
+        margin: 0;
+        padding: 0;
+         }
+
+        .main-container{
+         background-color: black;
+         position: fixed;
+         width: 100%;
+         height: 100%;  
+        }
+
+        .container1{
+            background-color: black;
+            width: 500px;
+            height: 600px;
+            position: relative;
+            top: 33px;
+            left: 170px;
+            border-top-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            transition-delay: 1s;
+            transition-duration: 1s;
+            cursor: pointer;
+        }
+        .container1:hover{
+            background-color: gray;
+            transition: 1s;
+        }
+
+        .container2{
+            background-color: black;
+            width: 500px;
+            height: 600px;
+            position: absolute;
+            top:100px;
+            left: 850px;
+            border-top-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+            transition-delay: 1s;
+            transition-duration: 1s;
+            cursor: pointer;
+          
+        }
+        .container2:hover{
+            background-color: gray;
+            transition: 1s;
+        }
+
+        img{
+            position: relative;
+            width: 26.5rem;
+            left: -7.5px;
+            margin: 35px;
+            margin-bottom: 10px;
+            border: 10px inset rgba(0, 0, 0, 0.656);
+        }
+
+        .campus-name{
+            font-family: Georgia;
+            text-align: center;
+            font-size: 1em;
+            border: 3px solid rgba(0, 0, 0, 0.682);
+            background-color: rgba(0, 0, 255, 0.87);
+            color: black;
+            border-radius: 2px;
+
+        }
+        
+        .campus-contact pre{
+            font-family: Georgia;
+            margin-top: 45px;
+          
+        }
+
+        
+
+        .profile-pic{
+            position: relative;
+            width: 20rem;
+            left: 2.7rem;
+            margin: 35px;
+            margin-bottom: 10px;
+            border: 10px inset rgba(0, 0, 0, 0.656);
+        }
+
+        
+        .std-number pre{
+            font-family: Georgia;
+            margin-top: 20px;
+            font-size: smaller;
+            line-height: 21px;
+          
+        }
+
+        .year-course pre{
+            font-family: Georgia;
+            margin-top: 5px;
+            font-size: smaller;
+            line-height: 20px;
+        }
+        
+        /* .title{
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 2em;
+            position: relative;
+            top: 5%;
+            left: 8%;
+        }
+
+        span{
+            color:  rgba(0, 0, 255, 0.87);;
+        } */
+        nav a{
+            text-decoration: none;
+            padding: 25px;
+            text-transform:uppercase;
+            color: white;
+            position: relative;
+    
+        }
+
+        /* nav a:hover{
+
+            color: gold;
+            position: relative
+        } */
+
+        nav a::after{
+
+            content: '';
+            position: absolute;
+            bottom: 22px;
+            left: 25px;
+            width: 0%;
+            height: 2px;
+            background-color: gold;
+            transition:  0.2s;
+            
+        }
+
+        nav a:hover::after{
+            width: 65%;
+            
+        }
+
+        nav{
+            text-align: center;
+            margin: 25px;
+        }
+
+
+
+     
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="AcadInfo.html">Academic Info.</a>
+            <a href="PersoanlInfo.html">personal Info.</a>
+            <a href="familyInfo.html">Family Info.</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="resume.html">Resume</a>
+           
+          </nav>
+            <!-- <div class="title">
+                <h1><span>Academic</span> Information</h1>
+            </div> -->
+            <div class="container1">
+                <div class="picture">
+                    <img src="lspu.JPG" alt="">
+                    <div class="campus-name">
+                        <h1>Laguna State polytechnic University - LB</h1>
+                    </div>
+                    <div class="campus-contact">
+                        <pre>
+                        Address:  56PJ+PP9, Los Baños, 4030 Laguna <br>
+                        Phone No. (049) 536 1349
+                        </pre>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container2">
+                <div class="profile">
+                    <img src="pookieeeeee.jpg" alt="" class="profile-pic">
+                    <div class="std-number">
+                        <pre>
+                        Student Name:   Michael Delos Santos<br>
+                        Student No.         0422-0918 
+                        </pre>
+                    </div>
+                    <div class="year-course">
+                        <pre>
+                         Course:               Bachelor of Science and Information Technology <br>
+                         Year:                     Second (2nd) Year College
+                        </pre>
+                    </div>
+                </div>
+              
+            </div>
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Page</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 25px;
+            text-transform:uppercase;
+            color: white;
+            position: relative;
+            
+        }
+
+        /* nav a:hover{
+
+            color: gold;
+            position: relative
+        } */
+
+        nav a::after{
+
+            content: '';
+            position: absolute;
+            bottom: 22px;
+            left: 25px;
+            width: 0%;
+            height: 2px;
+            background-color: gold;
+            transition:  0.2s;
+        }
+
+        nav a:hover::after{
+            width: 65%;
+            
+        }
+
+        nav{
+            text-align: center;
+            margin: 25px;
+        }
+
+        .main-body{
+            background-color: whitesmoke;
+            width: 650px;
+            height: 1200px;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            padding: 25px;
+            border-radius: 25px;
+            top: 25px;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+        }
+
+        .main-body:hover{
+            background-color: rgba(0, 174, 255, 0.841);
+            transition: 0.5s;
+        }
+
+        h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #info{
+            position: relative;
+            top: 5%;
+            padding: 25px;
+           margin-bottom: 10%;
+        }h1{
+            font-style: italic;
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="AcadInfo.html">Academic Info.</a>
+        <a href="PersoanlInfo.html">personal Info.</a>
+        <a href="familyInfo.html">Family Info.</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="resume.html">Resume</a>
+      </nav>
+      <div class="main-body">
+        <h1>Family Information</h1>
+        <hr>
+        <div class="info1" id="info">
+            <h2>Father Name:</h2>
+            <p>Vergel Delos Santos</p>
+            <h2>Occupation:</h2>
+            <p>Security Guard</p>
+        </div>
+        <hr>
+        <div class="info2"  id="info">
+            <h2>Mother Name:</h2>
+            <p>Rybylyn Delos Santos</p>
+            <h2>Occupation:</h2>
+            <p>House Wife</p>
+        </div>
+        <hr>
+        <div class="info3"  id="info">
+            <h2>Brothers Name:</h2>
+            <p>Miko Delos Santos</p>
+            <p>Mark Delos Santos</p>
+        </div>
+        <hr>
+        <div class="info4"  id="info">
+            <h2>Sisters Name:</h2>
+            <p>Michaella Delos Snatos</p>
+        </div>
+        </div>
+
+      </div>
+</body>
+</html>
